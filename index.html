@@ -1,83 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free browser games for all — simple, playful, and easy to discover." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="50 hand-picked browser games with no ad-clutter. Click a tile and play." />
   <title>Free Browser Games for All</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
+  <main class="shell">
     <header class="hero">
-      <a class="wordmark" href="./" aria-label="Free Browser Games for All home">
-        <span class="line-1">FREE BROWSER</span>
-        <span class="line-2">GAMES</span>
-        <span class="dot">●</span>
-        <span class="line-3">FOR ALL</span>
-      </a>
-      <p class="subtitle">games and stuff you can play in your browser</p>
+      <div class="logo" aria-label="Free Browser Games for All">
+        <span>FREE</span>
+        <span class="face" aria-hidden="true"><i></i><i></i><b></b></span>
+        <span>BROWSER</span>
+        <strong>GAMES</strong>
+      </div>
+      <p>50 genuinely fun browser games. No giant portal, no ad-clutter, just click and play.</p>
+      <div class="stats"><span>50 games</span><span>•</span><span>free to open</span><span>•</span><span>browser-first</span></div>
     </header>
 
-    <section class="cards" aria-label="Game cards">
-      <a class="game-banner narrow-banner" href="https://narrow.one/" target="_blank" rel="noopener noreferrer" aria-label="Play Narrow One">
-        <div class="banner-scene narrow-scene" aria-hidden="true">
-          <div class="cloud cloud-a"></div>
-          <div class="cloud cloud-b"></div>
-          <div class="hill hill-back"></div>
-          <div class="hill hill-front"></div>
-          <div class="castle castle-left">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="castle castle-right">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="banner-flag"></div>
-          <div class="archer">
-            <div class="archer-head"></div>
-            <div class="archer-body"></div>
-            <div class="archer-bow"></div>
-            <div class="archer-arrow"></div>
-          </div>
-        </div>
-        <div class="banner-content">
-          <div class="title-wrap">
-            <div class="game-icon">🏹</div>
-            <div>
-              <h2>Narrow One</h2>
-              <p>Low-poly castles, bows, flags, and fast 5v5 action.</p>
-            </div>
-          </div>
-          <span class="open-pill">Play ↗</span>
-        </div>
-      </a>
+    <nav class="filters" aria-label="Filter games">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="action">Action</button>
+      <button class="filter" data-filter="puzzle">Puzzle</button>
+      <button class="filter" data-filter="strategy">Strategy</button>
+      <button class="filter" data-filter="arcade">Arcade</button>
+      <button class="filter" data-filter="multiplayer">Multiplayer</button>
+      <button class="filter" data-filter="chill">Chill</button>
+    </nav>
 
-      <article class="game-banner placeholder-banner" aria-label="More games soon">
-        <div class="banner-scene placeholder-scene" aria-hidden="true">
-          <div class="shape shape-a"></div>
-          <div class="shape shape-b"></div>
-          <div class="shape shape-c"></div>
-          <div class="question-mark">?</div>
-        </div>
-        <div class="banner-content">
-          <div class="title-wrap">
-            <div class="game-icon">🎮</div>
-            <div>
-              <h2>More Games Soon</h2>
-              <p>Send the next game and I’ll build a matching card for it too.</p>
-            </div>
-          </div>
-          <span class="coming-pill">Coming soon</span>
-        </div>
-      </article>
-    </section>
+    <section id="games" class="game-grid" aria-live="polite"></section>
   </main>
 
   <footer class="footer">
     <span>Powered by <a href="https://hoppedev.app/" target="_blank" rel="noopener noreferrer">HoppeDev.app</a></span>
+    <span class="footnote">Ad status checked from browser-game publisher/creator pages in October 2026. Sites can change.</span>
   </footer>
+
+  <script src="games.js"></script>
 </body>
 </html>
