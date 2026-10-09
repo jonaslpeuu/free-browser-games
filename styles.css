@@ -67,3 +67,36 @@
 .pattern-surf .sticker-1{left:12%;top:18%;transform:rotate(-18deg) scale(1.05)}
 .pattern-surf .sticker-2{left:46%;top:36%;transform:rotate(-13deg) scale(1.25)}
 .pattern-surf .sticker-3{right:8%;bottom:14%;transform:rotate(7deg) scale(.9)}
+
+
+/* Experimental tab + game art */
+.experimental-filter{border-style:dashed}
+.experimental-filter.active{background:#5b3434;border-color:#5b3434}
+.game-card.disabled{filter:saturate(.55);cursor:not-allowed;opacity:.82}
+.game-card.disabled:hover{transform:none;box-shadow:0 5px 0 #2d261c0d,0 18px 35px #2d261c12}
+
+.pattern-zombies .card-art,.pattern-kino .card-art{background:linear-gradient(145deg,#171515,#351919 58%,#6f2525)}
+.pattern-zombies .gridlines,.pattern-kino .gridlines{background-image:repeating-linear-gradient(90deg,currentColor 0 1px,transparent 1px 18px);opacity:.1}
+.pattern-moonzombies .card-art{background:radial-gradient(circle at 72% 28%,#e7e6d7 0 44px,#9a9a91 45px 49px,transparent 50px),linear-gradient(#080d25,#1d294c)}
+.pattern-cheese .gridlines{background-image:radial-gradient(circle,#4b350d 0 9px,transparent 10px);background-size:54px 54px;opacity:.22}
+.pattern-blackops .card-art,.pattern-mw2 .card-art{background:linear-gradient(120deg,#171a1d,#333a3b 55%,var(--accent))}
+.pattern-blackops .blob-a,.pattern-mw2 .blob-a{clip-path:polygon(0 20%,100% 0,78% 100%,8% 80%);border-radius:0;opacity:.35}
+.pattern-skate .blob-a,.pattern-skaterust .blob-a,.pattern-surfexp .blob-a{width:80%;height:22%;left:6%;top:58%;border-radius:8px;transform:skewX(-28deg) rotate(-10deg)}
+.pattern-skate .gridlines,.pattern-skaterust .gridlines,.pattern-surfexp .gridlines{background-image:repeating-linear-gradient(120deg,currentColor 0 2px,transparent 2px 26px);opacity:.12}
+.pattern-halo .card-art,.pattern-halomobile .card-art{background:radial-gradient(circle at 50% 55%,transparent 0 60px,var(--accent) 62px 69px,transparent 71px),linear-gradient(145deg,#101a25,#273949)}
+.pattern-halo .blob-a,.pattern-halomobile .blob-a{background:transparent;border:13px solid var(--accent);border-radius:50%;width:62%;height:42%;left:18%;top:31%;transform:rotate(-16deg)}
+.pattern-football .card-art{background:linear-gradient(90deg,#31764b 0 49%,#397f52 49% 51%,#31764b 51%)}
+.pattern-football .gridlines{background-image:linear-gradient(90deg,#fff 2px,transparent 2px),linear-gradient(#fff 2px,transparent 2px);background-size:100px 100px;opacity:.18}
+.pattern-gta5 .card-art{background:linear-gradient(150deg,#1a1d21,#41474d)}
+.pattern-vicecity .card-art{background:linear-gradient(#33213e 0 48%,#d96c9a 49% 55%,#4ca5ad 56% 100%)}
+.pattern-vicecity .gridlines{background-image:linear-gradient(90deg,#fff 1px,transparent 1px),linear-gradient(#fff 1px,transparent 1px);background-size:30px 30px;opacity:.1}
+.pattern-simpsons .card-art{background:linear-gradient(#88cee0 0 58%,#f0d743 58%)}
+.pattern-quake .card-art,.pattern-quake2 .card-art,.pattern-quake3 .card-art,.pattern-unreal .card-art{background:radial-gradient(circle at 50% 50%,var(--accent) 0 25px,transparent 26px),linear-gradient(145deg,#151515,#332821)}
+.pattern-quake .gridlines,.pattern-quake2 .gridlines,.pattern-quake3 .gridlines,.pattern-unreal .gridlines{background-image:conic-gradient(from 45deg,currentColor 0 2deg,transparent 2deg 45deg);opacity:.11}
+.pattern-wolf .card-art{background:linear-gradient(#66705c 0 47%,#4b4d42 47% 100%)}
+.pattern-wolf .blob-a{clip-path:polygon(0 100%,0 36%,17% 36%,17% 20%,35% 20%,35% 44%,56% 44%,56% 11%,76% 11%,76% 36%,100% 36%,100% 100%);border-radius:0}
+.pattern-halflife .card-art,.pattern-webxash .card-art{background:linear-gradient(130deg,#181816,#3a332b)}
+.pattern-halflife .sticker-1,.pattern-webxash .sticker-1{font-family:Arial,sans-serif;color:#f28c28}
+.pattern-diablo .card-art{background:radial-gradient(circle at 50% 70%,#a0392a 0 12%,#351615 35%,#140d0d 70%)}
+.pattern-diablo .gridlines{background-image:repeating-radial-gradient(circle at 50% 75%,#e68a43 0 1px,transparent 2px 22px);opacity:.16}
+.pattern-hedgewars .card-art{background:linear-gradient(#bfe6ef 0 56%,#79a952 56% 100%)}
