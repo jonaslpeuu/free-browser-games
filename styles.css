@@ -100,3 +100,10 @@
 .pattern-diablo .card-art{background:radial-gradient(circle at 50% 70%,#a0392a 0 12%,#351615 35%,#140d0d 70%)}
 .pattern-diablo .gridlines{background-image:repeating-radial-gradient(circle at 50% 75%,#e68a43 0 1px,transparent 2px 22px);opacity:.16}
 .pattern-hedgewars .card-art{background:linear-gradient(#bfe6ef 0 56%,#79a952 56% 100%)}
+
+.footer{display:block}
+.footer-top{display:flex;justify-content:space-between;gap:22px}
+.disclaimer{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;line-height:1.55;color:var(--muted);font-family:system-ui,sans-serif}
+.disclaimer strong{display:block;margin-bottom:7px;color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.disclaimer p{margin:0 0 8px;max-width:none}
+@media(max-width:760px){.footer-top{flex-direction:column}.disclaimer{font-size:11px}}
